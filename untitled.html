@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+	div {
+		border: 0px solid red;
+	}
+	.clearfix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<div style="overflow:hidden"><!-- class="clearfix" -->
+			<input style="float:right" type="button" value="btn" />
+		</div>
+
+		<div style="background-color:red">
+			<div style="margin:0 0 0 9px;background-color:yellow">
+				<span style="font-size:26pt;background-color:#ffffff;color:red;padding: 0 5px 0 5px">问题搜索结果 </span>
+			</div>
+		</div>&gt;&gt;当前关键字：<span>申报</span>共<span>5</span>条相关结果 <input type="text" /><div>
+		</div>
+		
+	</div>
+</body>
+</html>
